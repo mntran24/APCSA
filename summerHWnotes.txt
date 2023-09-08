@@ -1,0 +1,82 @@
+1.2.
+public class ClassName
+public static void main(String[] args){}
+// q: what does void and String[] args do? what other variations exist, if any?
+// q: what does the capitalization indicate? it's marked up differently by the compiler
+System.out.println("hi"); //System.out.print for same line, println for on its own line (basically inserting a "\n" after)
+
+1.3.
+2 types of vars:
+- primitive: int, double, boolean (true / false)
+- object / reference: e.g. string
+int score;
+score = 4;
+//or int score = 4;
+final double PI = 3.14; //const that cannot be changed; consts should be capitalized
+Naming vars: should be...
+- meaningful (i.e. score)
+- camelCase
+- can include nums, letters, _, but not keywords (if, for, class, static, int, etc.)
+
+1.4.
+operators w/ at least one double value will return a double
+e.g. 2 / 3 will return 0, change to 2 / 3.0 to return a double
+
+Methods:
+public static RETURNTYPE NAME(ARGUMENTS)
+
+3.2. if
+if (condition)
+{
+//code to execute if true;
+}
+else
+{
+//code to execute if false;
+}
+
+4.1. while
+while (condition)
+{
+//code to execute while true;
+}
+for
+for (int start = value; start < value; start++){
+//code to execute;
+}
+
+6.1. Arrays
+TYPE[] ARRAYNAME = new TYPE[NUM];
+double[] prices = new double[5];
+//or
+TYPE[] ARRAYNAME = {item1, item2, item3};
+String[] names = {"Jamal", "Emily", "Tom"};
+.length: gets the array length
+access index: array[i]
+indices go from 0 to array.length - 1
+
+6.2. Looping over arrays
+for (int index = 0; index < arrayname.length; index ++)
+{
+//code;
+}
+//reverse
+for (int index = arrayname.length - 1; index >= 0; index --)
+{
+//code;
+}
+
+2.6. Strings
+//pretty much the same as py, strings are object types of the String class String()
+//concat converts primitive types to strings
+//the backslash: "\n" = new line; "\\" = \; "\"" = "
+
+int length() method returns the number of characters in the string, including spaces and special characters like punctuation.
+
+String substring(int from, int to) method returns a new string with the characters in the current string starting with the character at the from index and ending at the character before the to index (if the to index is specified, and if not specified it will contain the rest of the string).
+
+int indexOf(String str) method searches for the string str in the current string and returns the index of the beginning of str in the current string or -1 if it isn’t found.
+
+int compareTo(String other) returns a negative value if the current string is less than the other string alphabetically, 0 if they have the same characters in the same order, and a positive value if the current string is greater than the other string alphabetically.
+
+boolean equals(String other) returns true when the characters in the current string are the same as the ones in the other string. This method is inherited from the Object class, but is overridden which means that the String class has its own version of that method.
